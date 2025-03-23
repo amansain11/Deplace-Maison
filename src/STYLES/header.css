@@ -1,0 +1,182 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    background-color: var(--clr-bg);
+    position: fixed;
+    width: 100%;
+}
+
+.content-left img{
+    width: 60px;
+}
+
+.content-center{
+    padding: 0 15px;
+}
+
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+}
+
+.menu-icon-line{
+    height: 2.5px;
+    background-color: black;
+}
+
+.menu-icon-line-one{ 
+    width: 50%;
+}
+
+.menu-icon-line-two{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 1.5px;
+}
+
+.menu-icon-line-three{
+    width: 49%;
+    margin-right: 2%;
+    align-self: end;
+}
+
+.content-right{
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.cart{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.header-desktop{
+    display: none;
+}
+
+.content-left-desktop img{
+    position: absolute;
+    top: 30px;
+    left: 31px;
+    width: 50px;
+    height: 142px;
+}
+
+.content-right-desktop .cart{
+    font-size: 14px;
+}
+
+.content-center-desktop .menu-icon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.menu-icon, .cart{
+    cursor: pointer;
+}
+
+.content-center-desktop .menu-icon::before{
+    content: url('/public/ink-mode-bg.svg');
+    width: 61px;
+    position: absolute;
+    z-index: -5;
+    top: -1px;
+}
+
+.menu-icon-text{
+    font-family: cyberthrone;
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+    text-transform: none;
+}
+
+/* xs */
+@media (min-width: 320px){
+    .content-left img{
+        width: 70px;
+    }
+
+    .menu-icon{
+        width: 31px;
+    }
+
+    .cart{
+        font-size: 13px;
+    }
+}
+
+/* sm */
+@media (min-width: 425px){
+    .header{
+        padding: 21px 25px;
+    }
+
+    .content-left img{
+        width: 93px;
+    }
+
+    .cart{
+        font-size: 17px;
+    }
+}
+
+/* md */
+/* @media (min-width: 625px){
+    
+} */
+
+/* lg */
+@media (min-width: 768px){
+    .header{
+        padding: 28px 38px;
+    }
+
+    .content-left img{
+        width: 108px;
+    }
+
+    .menu-icon{
+        width: 35px;
+    }
+
+    .cart{
+        font-size: 17px;
+    }
+}
+
+/* xl */
+@media (min-width: 1024px){
+    .header-desktop{
+        display: flex;
+    }
+    .header-mobile{
+        display: none;
+    }
+    .header{
+        padding: 30px 72px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1425px){
+    .content-right-desktop .cart{
+        font-size: 13px;
+    }
+    .header{
+        padding: 28px 65px;
+    }
+    .content-left-desktop img{
+        position: absolute;
+        top: 30px;
+        left: 28px;
+        width: 46px;
+        height: 133px;
+    }
+}
