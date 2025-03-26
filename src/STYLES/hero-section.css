@@ -1,0 +1,164 @@
+.hero-section{
+    padding-top: 74px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-text-box{
+    align-self: flex-end;
+}
+
+.lower-text-box{
+    display: flex;
+}
+
+.sub-text-box{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sub-text-box :first-child{
+    line-height: 22px;
+}
+
+.sub-text-box :last-child{
+    line-height: 4px;
+    margin-left: 15px;
+}
+
+.hero-section h1{
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    line-height: 49px;
+}
+
+.hero-section h1 span{
+    line-height: 0;
+    margin-left: 5px;
+    vertical-align: 6px;
+}
+
+/* xs */
+/* @media (min-width: 320px){
+
+} */
+
+/* sm */
+@media (min-width: 425px){
+    .hero-section{
+        padding-top: 98px;
+    }
+    
+    .hero-section h1{
+        font-size: 72px;
+        letter-spacing: -7px;
+        line-height: 63px;
+    }
+    .sub-text-box{
+        font-size: 22px;
+        letter-spacing: -2px;
+    }
+    .sub-text-box :last-child{
+        line-height: 14px;
+        margin-left: 19px;
+    }
+}
+
+
+/* md */
+@media (min-width: 625px){
+    .hero-section{
+        padding-top: 85px;
+    }
+    
+    .hero-section h1{
+        font-size: 94px;
+        letter-spacing: -9px;
+        line-height: 75px;
+    }
+    .sub-text-box{
+        font-size: 26px;
+        letter-spacing: -2px;
+    }
+    .sub-text-box :last-child{
+        line-height: 20px;
+        margin-left: 25px;
+    }
+}
+
+/* lg */
+@media (min-width: 768px){
+    .hero-section{
+        padding-top: 100px;
+    }
+    
+    .hero-section h1{
+        font-size: 115px;
+        letter-spacing: -11px;
+        line-height: 91px;
+    }
+    .sub-text-box{
+        font-size: 31px;
+        letter-spacing: -2px;
+        margin-top: 5px;
+    }
+    .sub-text-box :last-child{
+        line-height: 30px;
+        margin-left: 33px;
+    }
+}
+
+/* xl */
+@media (min-width: 1024px){
+    .hero-section{
+        padding-top: 105px;
+    }
+    
+    .hero-section h1{
+        font-size: 144px;
+        letter-spacing: -14px;
+        line-height: 120px;
+    }
+    .sub-text-box{
+        font-size: 41px;
+        letter-spacing: -2px;
+        margin-top: 10px;
+    }
+    .sub-text-box :last-child{
+        line-height: 48px;
+        margin-left: 36px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1440px){
+    .hero-section{
+        padding-top: 130px;
+    }
+    
+    .hero-section h1{
+        font-size: 201px;
+        letter-spacing: -20px;
+        line-height: 170px;
+    }
+
+    .hero-section h1 span{
+        line-height: 0;
+        margin-left: 15px;
+        vertical-align: 6px;
+    }
+
+    .sub-text-box{
+        font-size: 58px;
+        letter-spacing: -3px;
+        margin-top: 28px;
+    }
+
+    .sub-text-box :last-child{
+        line-height: 70px;
+        margin-left: 50px;
+    }
+}

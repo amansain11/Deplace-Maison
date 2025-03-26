@@ -1,4 +1,52 @@
+.section{
+    padding: 0 32px 0 25px;
+}
+
 main{
-    /* background-color: royalblue;
-    height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* xs */
+@media (min-width: 375px){
+    .section{
+        padding: 0 37px 0 30px;
+    }
+}
+
+/* sm */
+@media (min-width: 425px){
+    .section{
+        padding: 0 42px 0 34px;
+    }
+}
+
+
+/* md */
+@media (min-width: 625px){
+    .section{
+        padding: 0 60px 0 110px;
+    }
+}
+
+/* lg */
+@media (min-width: 768px){
+    .section{
+        padding: 0 76px 0 138px;
+    }
+}
+
+/* xl */
+@media (min-width: 1024px){
+    .section{
+        padding: 0 102px 0 240px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1425px){
+    .section{
+        padding: 0 144px 0 338px;
+    }
 }
