@@ -1,0 +1,170 @@
+.i-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 6px;
+}
+
+.images-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+}
+
+.img-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-bg{
+    border: 3px solid var(--clr-font);
+}
+
+.img-title-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.img-title-wrapper span{
+    flex: 1;
+    font-size: 9px;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+.scotch-tape{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    height: 88%;
+}
+
+.scotch-tape img{
+    width: 14vw;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.explore span{
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+
+.explore-icon{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.explore-circle{
+    width: 35px;
+    height: 35px;
+}
+
+.explore-arrow{
+    width: 20px;
+    position: absolute;
+}
+
+/* xs */
+/* @media (min-width: 320px){
+
+} */
+
+/* sm */
+@media (min-width: 425px){
+    .img-title-wrapper span{
+        font-size: 12.5px;
+        line-height: 1.4rem;
+    }
+
+    .explore{
+        gap: 8px;
+    }
+
+    .explore span{
+        font-size: 17px;
+    }
+    
+    .explore-circle{
+        width: 46px;
+        height: 46px;
+    }
+    
+    .explore-arrow{
+        width: 25px;
+    }
+}
+
+
+/* md */
+/* @media (min-width: 625px){
+} */
+
+/* lg */
+@media (min-width: 768px){
+    .i-section{
+        padding-top: 1rem;
+    }
+
+    .explore{
+        gap: 12px;
+    }
+
+    .explore span{
+        font-size: 16px;
+    }
+    
+    .explore-circle{
+        width: 53px;
+        height: 53px;
+    }
+    
+    .explore-arrow{
+        width: 30px;
+    }
+}
+
+/* xl */
+@media (min-width: 1024px){
+    .explore-circle{
+        width: 51px;
+        height: 51px;
+    }
+    
+    .explore-arrow{
+        width: 25px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1440px){
+    .explore{
+        gap: 16px;
+    }
+
+    .explore span{
+        font-size: 22px;
+    }
+    
+    .explore-circle{
+        width: 72px;
+        height: 72px;
+    }
+    
+    .explore-arrow{
+        width: 36px;
+    }
+}
