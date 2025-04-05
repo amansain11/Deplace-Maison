@@ -9,18 +9,15 @@
 }
 
 .morquee-text-wrapper{
+    position: relative;
     display: flex;
     height: 100%;
     align-items: center;
-    animation: morquee 15s infinite linear;
 }
 
-@keyframes morquee {
-    from{
-        transform: translateX(0%);
-    }
+@keyframes scrollLeft{
     to{
-        transform: translateX(-251%);
+        left: -25ch;
     }
 }
 
@@ -29,8 +26,29 @@
     letter-spacing: -1px;
     line-height: 1px;
     text-wrap-mode: nowrap;
+    position: absolute;
+    left: max(calc(19.5ch * 6), 100%);
+    animation: scrollLeft 30s infinite linear;
 }
 
+.morquee-text-1{
+    animation-delay: calc(30s / 6 * (30 - 1) * -1);
+}
+.morquee-text-2{
+    animation-delay: calc(30s / 6 * (30 - 2) * -1);
+}
+.morquee-text-3{
+    animation-delay: calc(30s / 6 * (30 - 3) * -1);
+}
+.morquee-text-4{
+    animation-delay: calc(30s / 6 * (30 - 4) * -1);
+}
+.morquee-text-5{
+    animation-delay: calc(30s / 6 * (30 - 5) * -1);
+}
+.morquee-text-6{
+    animation-delay: calc(30s / 6 * (30 - 6) * -1);
+}
 
 
 /* sm */
@@ -44,6 +62,8 @@
     .morquee-text{
         font-size: 17px;
         line-height: 0px;
+        left: max(calc(20ch * 6), 100%);
+
     }
 }
 
@@ -58,14 +78,8 @@
     
     .morquee-text{
         font-size: 19px;
-    }
-    @keyframes morquee {
-        from{
-            transform: translateX(0%);
-        }
-        to{
-            transform: translateX(-123%);
-        }
+        left: max(calc(21ch * 6), 100%);
+
     }
 }
 
@@ -89,7 +103,7 @@
 }
 
 /* 2xl */
-@media (min-width: 1425px){
+@media (min-width: 1440px){
     .morquee-section{
         border-width: 3px;
         height: 72px;
@@ -98,5 +112,7 @@
     
     .morquee-text{
         font-size: 36px;
+        left: max(calc(22ch * 6), 100%);
+
     }
 }
