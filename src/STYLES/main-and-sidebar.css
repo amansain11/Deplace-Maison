@@ -8,6 +8,25 @@ main{
     align-items: center;
 }
 
+.sidebar{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    padding: 0 0 25px 25px;
+    z-index: 1;
+}
+
+.sidebar ul{
+    list-style: none;
+    font-size: 9px;
+    letter-spacing: -.5px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--clr-font);
+}
+
 /* xs */
 @media (min-width: 375px){
     .section{
@@ -41,6 +60,9 @@ main{
 @media (min-width: 1024px){
     .section{
         padding: 0 102px 0 240px;
+    }
+    .sidebar{
+        display: inline;
     }
 }
 
