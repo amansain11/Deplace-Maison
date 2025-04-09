@@ -56,9 +56,29 @@
     gap: 6px;
 }
 
-.explore span{
+.explore-text{
     font-size: 13px;
     letter-spacing: -1px;
+    cursor: pointer;
+    position: relative;
+}
+
+.explore-text::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: var(--clr-font);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+}
+
+.explore-text:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
 }
 
 .explore-icon{

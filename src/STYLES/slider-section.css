@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+.slider-section .explore{
+    margin-top: 50px;
+}
+
 .slider{
     position: relative;
     /* left: 10%;
