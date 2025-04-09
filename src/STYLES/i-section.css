@@ -66,16 +66,27 @@
     display: flex;
     position: relative;
     align-items: center;
+    cursor: pointer;
+}
+
+.explore-icon:hover > .explore-circle{
+    transform: scale(1.13);
+}
+
+.explore-icon:hover > .explore-arrow{
+    transform: rotate(360deg);
 }
 
 .explore-circle{
     width: 35px;
     height: 35px;
+    transition: transform .4s ease-in-out;
 }
 
 .explore-arrow{
     width: 20px;
     position: absolute;
+    transition: transform .3s ease-in-out;
 }
 
 /* xs */
