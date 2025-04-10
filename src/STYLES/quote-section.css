@@ -24,21 +24,41 @@
     top: 0;
     left: 9px;
     position: absolute;
-    animation: slide 10s ease-in-out infinite;
+    opacity: 0;
+    animation: q-name-slider 15s ease-in-out infinite;
 }
 
-@keyframes slide{
+@keyframes q-name-slider{
     0% {
       top: 0;  /* Start at the top */
     }
-    45% {
-      top: 0;  /* Stay at the top for 45% of the total time */
+    5%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    45%{
+        top: 0;
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
     }
     50% {
       top: -100%; /* Move to the bottom */
     }
+    55%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
     95% {
       top: -100%; /* Stay at the bottom for 45% of the total time */
+    }
+    98%{
+        opacity: 0;
     }
     100% {
        top: 0;  /* Return to the top */
@@ -55,7 +75,25 @@
     width: 30ch;
     position: absolute;
     top: 0;
-    animation: slide 10s ease-in-out infinite;
+    animation: q-para-slider 15s ease-in-out infinite;
+}
+
+@keyframes q-para-slider{
+    0% {
+      top: 0;  /* Start at the top */
+    }
+    45%{
+        top: 0;
+    }
+    50% {
+      top: -100%; /* Move to the bottom */
+    }
+    95% {
+      top: -100%; /* Stay at the bottom for 45% of the total time */
+    }
+    100% {
+       top: 0;  /* Return to the top */
+    }
 }
 
 .q-para{
