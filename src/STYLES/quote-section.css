@@ -22,10 +22,27 @@
 .q-name-wrapper{
     font-family: cyberthrone;
     top: 0;
-    bottom: 0;
     left: 9px;
-    /* white-space: nowrap; */
     position: absolute;
+    animation: slide 10s ease-in-out infinite;
+}
+
+@keyframes slide{
+    0% {
+      top: 0;  /* Start at the top */
+    }
+    45% {
+      top: 0;  /* Stay at the top for 45% of the total time */
+    }
+    50% {
+      top: -100%; /* Move to the bottom */
+    }
+    95% {
+      top: -100%; /* Stay at the bottom for 45% of the total time */
+    }
+    100% {
+       top: 0;  /* Return to the top */
+    }
 }
 
 .quote-w-right{
@@ -36,12 +53,9 @@
 
 .q-para-wrapper{
     width: 30ch;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
     position: absolute;
     top: 0;
-    /* bottom: 0; */
+    animation: slide 10s ease-in-out infinite;
 }
 
 .q-para{
@@ -52,15 +66,10 @@
     padding: 12px 0;
 }
 
-/* xs */
-/* @media (min-width: 320px){
-
-} */
-
 /* sm */
 @media (min-width: 425px){
     .quote-w-left{
-        width: 32vw;
+        width: 30vw;
     }
     .q-bg-img{
         width: 64px;
@@ -77,10 +86,9 @@
         height: 65px;
     }
     .q-para{
-        line-height: 12px;
+        line-height: 13px;
     }
 }
-
 
 /* md */
 @media (min-width: 625px){
@@ -88,7 +96,7 @@
         padding: 12vw 8vw 12vw 0;
     }
     .quote-w-left{
-        width: 34vw;
+        /* width: 30vw; */
         margin-left: 12.5vw;
     }
     .q-bg-img{
@@ -112,7 +120,7 @@
 /* lg */
 @media (min-width: 768px){
     .quote-w-left{
-        width: 32vw;
+        /* width: 25vw; */
         margin-left: 10.5vw;
     }
     .q-bg-img{
@@ -127,7 +135,7 @@
     }
     .quote-w-right{
         font-size: 17px;
-        height: 70px;
+        height: 84px;
     }
     .q-para-wrapper{
         width: 34ch;
@@ -135,6 +143,7 @@
     }
     .q-para{
         line-height: 18px;
+        padding: 7px 0;
     }
 }
 
@@ -147,7 +156,7 @@
         justify-content: end;
     }    
     .quote-w-left{
-        width: 20vw;
+        width: 18vw;
         margin-left: 0;
     }
     .q-bg-img{
@@ -162,7 +171,7 @@
     }
     .quote-w-right{
         font-size: 14px;
-        height: 56px;
+        height: 68px;
         width: 33ch;
     }
     .q-para{
@@ -184,7 +193,7 @@
     }
     .quote-w-right{
         font-size: 18px;
-        height: 80px;
+        height: 95px;
         width: 33ch;
     }
     .q-para-wrapper{
