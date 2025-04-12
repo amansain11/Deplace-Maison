@@ -22,9 +22,55 @@ main{
     letter-spacing: -.5px;
 }
 
+.sidebar li{
+    position: relative;
+    width: 58px;
+    height: 13px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
 .sidebar a{
     text-decoration: none;
     color: var(--clr-font);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: -500% 100%;
+    transition: transform .4s ease-in-out;
+}
+
+.sidebar a :last-child{
+    position: absolute;
+    left: 0px;
+    transform-origin: left center;
+}
+
+.first-li a :last-child{
+    top: 11px;
+    transform: rotate(6deg);
+}
+
+.first-li:hover a{
+    transform: rotate(-6deg);
+}
+
+.second-li a :last-child{
+    top: 15px;
+    transform: rotate(3deg);
+}
+
+.second-li:hover a{
+    transform: rotate(-3deg);
+}
+
+.third-li a :last-child{
+    top: 13px;
+    transform: rotate(5deg);
+}
+
+.third-li:hover a{
+    transform: rotate(-5deg);
 }
 
 /* xs */
@@ -67,8 +113,21 @@ main{
 }
 
 /* 2xl */
-@media (min-width: 1425px){
+@media (min-width: 1440px){
     .section{
         padding: 0 144px 0 338px;
+    }
+    .sidebar ul{
+        font-size: 13px;
+    }
+    .sidebar li{
+        width: 87px;
+        height: 20px;
+    }
+    .first-li a :last-child, .third-li a :last-child{
+        top: 18px;
+    }
+    .second-li a :last-child{
+        top: 22px;
     }
 }
