@@ -124,6 +124,81 @@ footer a{
     list-style: none;
 }
 
+.upper-wrapper li{
+    width: 87px;
+    height: 27px;
+    position: relative;
+    overflow: hidden;
+}
+
+.upper-wrapper a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: -500% 100%;
+    transition: transform .4s ease-in-out;
+}
+
+.upper-wrapper a :last-child{
+    position: absolute;
+    left: 0;
+    transform-origin: left center;
+}
+
+.first-list a :last-child{
+    top: 22px;
+    transform: rotate(7deg);
+}
+
+.first-list:hover a{
+    transform: rotate(-7deg);
+}
+
+.second-list a :last-child{
+    top: 22px;
+    transform: rotate(3deg);
+}
+
+.second-list:hover a{
+    transform: rotate(-3deg);
+}
+
+.third-list a :last-child{
+    top: 23px;
+    transform: rotate(3deg);
+}
+
+.third-list:hover a{
+    transform: rotate(-3deg);
+}
+
+.fourth-list a :last-child{
+    top: 22.5px;
+    transform: rotate(4deg);
+}
+
+.fourth-list:hover a{
+    transform: rotate(-4deg);
+}
+
+.fivth-list a :last-child{
+    top: 26.5px;
+    transform: rotate(4deg);
+}
+
+.fivth-list:hover a{
+    transform: rotate(-4deg);
+}
+
+.sixth-list a :last-child{
+    top: 24.5px;
+    transform: rotate(4deg);
+}
+
+.sixth-list:hover a{
+    transform: rotate(-4deg);
+}
+
 .title, .lower-wrapper{
     font-size: 9px;
 }
@@ -308,6 +383,25 @@ footer a{
     }
     .upper-wrapper ul{
         font-size: 26px;
+    }
+    .upper-wrapper li{
+        width: 125px;
+        height: 36px;
+    }
+    .first-list a :last-child{
+        top: 30px;
+    }
+    .second-list a :last-child, .third-list a :last-child{
+        top: 31px;
+    }
+    .fourth-list a :last-child{
+        top: 31.5px;
+    }
+    .fivth-list a :last-child{
+        top: 36.5px;
+    }
+    .sixth-list a :last-child{
+        top: 33.5px;
     }
     .social-media-icon{
         width: 24.5px;
