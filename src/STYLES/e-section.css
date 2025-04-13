@@ -4,6 +4,10 @@
     width: 100%;
 }
 
+.e-text-wrapper{
+    overflow: hidden;
+}
+
 .e-text{
     font-size: 5.4vw;
     letter-spacing: -1.5px;
@@ -65,6 +69,7 @@
     .e-section{
         padding-top: 102px;
         padding-bottom: 102px;
+        padding-right: 48px;
     }
     .e-text{
         letter-spacing: -2px;

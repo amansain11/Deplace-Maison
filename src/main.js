@@ -10,6 +10,8 @@ import './STYLES/slider-section.css';
 import './STYLES/quote-section.css';
 import './STYLES/footer.css';
 
+import { textPullUpEffect } from './text-pullUp-effect.js';
 import { slider } from './img-slider.js';
 
+textPullUpEffect();
 slider();

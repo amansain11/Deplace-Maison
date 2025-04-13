@@ -1,12 +1,25 @@
 .hero-section{
-    padding-top: 74px;
+    padding-top: 64px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
+.upper-text-box-wrapper{
+    position: relative;
+    top: 1vh;
+}
+
+.upper-text-box-wrapper, .lower-text-box-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
 .upper-text-box{
     align-self: flex-end;
+    padding-right: 0.2em;
 }
 
 .lower-text-box{
@@ -14,8 +27,20 @@
     align-self: flex-end;
 }
 
+.pull-up-text{
+    /* opacity: 0; */
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.pullUp-effect{
+    /* opacity: 1; */
+    transform: translateY(0%);
+}
+
 .sub-text-box{
     font-size: 16px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -34,7 +59,8 @@
     font-size: 54px;
     font-weight: 500;
     letter-spacing: -5px;
-    line-height: 49px;
+    /* line-height: 49px; */
+    line-height: normal;
 }
 
 .hero-section h1 span{
@@ -51,13 +77,13 @@
 /* sm */
 @media (min-width: 425px){
     .hero-section{
-        padding-top: 98px;
+        padding-top: 88px;
     }
     
     .hero-section h1{
         font-size: 72px;
         letter-spacing: -7px;
-        line-height: 63px;
+        /* line-height: 63px; */
     }
     .sub-text-box{
         font-size: 22px;
@@ -65,7 +91,8 @@
     }
     .sub-text-box :last-child{
         line-height: 14px;
-        margin-left: 19px;
+        margin-left: 18px;
+        margin-right: 1px;
     }
 }
 
@@ -73,13 +100,15 @@
 /* md */
 @media (min-width: 625px){
     .hero-section{
-        padding-top: 85px;
+        padding-top: 75px;
     }
-    
+    .upper-text-box-wrapper{
+        top: 3vh;
+    }
     .hero-section h1{
         font-size: 94px;
         letter-spacing: -9px;
-        line-height: 75px;
+        /* line-height: 75px; */
     }
     .sub-text-box{
         font-size: 26px;
@@ -87,20 +116,20 @@
     }
     .sub-text-box :last-child{
         line-height: 20px;
-        margin-left: 25px;
+        margin-left: 24px;
     }
 }
 
 /* lg */
 @media (min-width: 768px){
     .hero-section{
-        padding-top: 100px;
+        padding-top: 90px;
     }
     
     .hero-section h1{
         font-size: 115px;
         letter-spacing: -11px;
-        line-height: 91px;
+        /* line-height: 91px; */
     }
     .sub-text-box{
         font-size: 31px;
@@ -109,20 +138,23 @@
     }
     .sub-text-box :last-child{
         line-height: 30px;
-        margin-left: 33px;
+        margin-left: 32px;
     }
 }
 
 /* xl */
 @media (min-width: 1024px){
     .hero-section{
-        padding-top: 105px;
+        padding-top: 95px;
     }
-    
+    .upper-text-box{
+        align-self: flex-end;
+        padding-right: 0.3em;
+    }
     .hero-section h1{
         font-size: 144px;
         letter-spacing: -14px;
-        line-height: 120px;
+        /* line-height: 120px; */
     }
     .sub-text-box{
         font-size: 41px;
@@ -131,20 +163,29 @@
     }
     .sub-text-box :last-child{
         line-height: 48px;
-        margin-left: 36px;
+        margin-left: 35px;
     }
 }
 
 /* 2xl */
 @media (min-width: 1440px){
     .hero-section{
-        padding-top: 130px;
+        padding-top: 120px;
+    }
+
+    .upper-text-box-wrapper{
+        top: 5vh;
+    }
+
+    .upper-text-box{
+        align-self: flex-end;
+        padding-right: 0.4em;
     }
     
     .hero-section h1{
         font-size: 215px;
         letter-spacing: -22px;
-        line-height: 182px;
+        /* line-height: 182px; */
     }
 
     .hero-section h1 span{
@@ -159,6 +200,6 @@
 
     .sub-text-box :last-child{
         line-height: 85px;
-        margin-left: 55px;
+        margin-left: 54px;
     }
 }
