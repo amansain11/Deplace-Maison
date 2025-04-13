@@ -12,6 +12,8 @@ import './STYLES/footer.css';
 
 import { textPullUpEffect } from './text-pullUp-effect.js';
 import { slider } from './img-slider.js';
+import { zoomEffect } from './zoom-effect.js';
 
 textPullUpEffect();
+zoomEffect();
 slider();

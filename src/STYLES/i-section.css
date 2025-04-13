@@ -20,6 +20,23 @@
 
 .img-bg{
     border: 3px solid var(--clr-font);
+    overflow: hidden;
+    mix-blend-mode: multiply;
+}
+
+.img-bg img{
+    animation: zoom 1s linear infinite;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    animation-fill-mode: both;
+    animation-delay: calc(var(--scroll) * -1s);
+    transition: transform .5s ease;
+}
+
+@keyframes zoom{
+    to{
+        transform: scale(1.5);
+    }
 }
 
 .img-title-wrapper{
