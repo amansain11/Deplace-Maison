@@ -9,11 +9,14 @@ import './STYLES/e-section.css';
 import './STYLES/slider-section.css';
 import './STYLES/quote-section.css';
 import './STYLES/footer.css';
+import './STYLES/cart-menu.css';
 
 import { textPullUpEffect } from './text-pullUp-effect.js';
 import { slider } from './img-slider.js';
 import { zoomEffect } from './zoom-effect.js';
+import { cart } from './cart.js';
 
 textPullUpEffect();
 zoomEffect();
 slider();
+cart();
