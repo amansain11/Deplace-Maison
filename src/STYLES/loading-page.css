@@ -1,0 +1,124 @@
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--clr-font);
+    color: var(--clr-bg);
+    position: fixed;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    transform: translateY(0%);
+    transition: transform 1s ease-in-out;
+}
+
+.shutter-up{
+    transform: translateY(-100%);
+}
+
+.l-percentage-wrapper{
+    height: 128px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.l-percentage-box{
+    transition: transform .4s ease-in-out;
+    animation: moveUp 2s linear;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes moveUp{
+    0%{
+        transform: translateY(22%);
+    }
+    2%{
+        transform: translateY(22%);
+    }
+    25%{
+        transform: translateY(0%);
+    }
+    27%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-24%);
+    }
+    52%{
+        transform: translateY(-24%);
+    }
+    75%{
+        transform: translateY(-49%);
+    }
+    77%{
+        transform: translateY(-49%);
+    }
+    100%{
+        transform: translateY(-74%);
+    }
+}
+
+.percentage-text{
+    font-size: 128px;
+    font-family: "TT Trailers Trial Variable";
+}
+
+.description-text{
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: -0.5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 425px){
+    .l-percentage-wrapper{
+        height: 170px;
+    }
+    
+    .percentage-text{
+        font-size: 170px;
+    }
+
+    .description-text{
+        line-height: 1.3em;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px){
+    .l-percentage-wrapper{
+        height: 205px;
+    }
+    
+    .percentage-text{
+        font-size: 205px;
+    }
+}
+
+@media (min-width: 1024px){  
+    .l-percentage-wrapper{
+        height: 250px;
+    }  
+    .percentage-text{
+        font-size: 250px;
+    }
+}
+
+@media (min-width: 1440px){  
+    .l-percentage-wrapper{
+        height: 300px;
+    }  
+    .percentage-text{
+        font-size: 300px;
+    }
+    .description-text{
+        font-size: 20px;
+    }
+}

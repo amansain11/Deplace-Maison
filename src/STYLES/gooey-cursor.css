@@ -10,7 +10,7 @@
   pointer-events: none;
   mix-blend-mode: difference;
   filter: url(#goo);
-  z-index: 6;
+  z-index: 10;
 }
 
 .cursor-circle {
