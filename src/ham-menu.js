@@ -18,6 +18,9 @@ export const hamburger = ()=>{
         if(hamMenu.classList.contains('display-flex')){
             logo.setAttribute('src','logo-white.svg')
         }
+        else if(document.body.classList.contains('inkMode-color')){
+            logo.setAttribute('src','logo-inkMode.svg')
+        }
         else{
             logo.setAttribute('src','logo.svg')
         }

@@ -39,6 +39,7 @@
     background: var(--clr-card-bg);
     border: 1px solid var(--clr-font);
     position: relative;
+    color: var(--clr-font);
 }
 
 .item-img{

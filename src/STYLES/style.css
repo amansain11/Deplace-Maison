@@ -26,6 +26,7 @@ body{
   overflow-x: hidden;
   position: relative;
   font-family: "FavoritPro-Regular";
+  transition: all .4s ease;
 }
 
 img,

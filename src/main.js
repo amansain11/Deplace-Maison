@@ -11,15 +11,18 @@ import './STYLES/quote-section.css';
 import './STYLES/footer.css';
 import './STYLES/cart-menu.css';
 import './STYLES/ham-menu.css';
+import './STYLES/inkMode.css';
 
 import { textPullUpEffect } from './text-pullUp-effect.js';
 import { slider } from './img-slider.js';
 import { zoomEffect } from './zoom-effect.js';
 import { cart } from './cart.js';
 import { hamburger } from './ham-menu.js';
+import { inkMode } from './inkMode.js';
 
 textPullUpEffect();
 zoomEffect();
 slider();
 cart();
 hamburger();
+inkMode();

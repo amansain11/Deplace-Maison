@@ -32,12 +32,11 @@ main{
 
 .sidebar a{
     text-decoration: none;
-    color: var(--clr-font);
     position: absolute;
     top: 0;
     left: 0;
     transform-origin: -500% 100%;
-    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out, all .4s ease;
 }
 
 .sidebar a :last-child{
@@ -71,6 +70,10 @@ main{
 
 .third-li:hover a{
     transform: rotate(-5deg);
+}
+
+.inkMode-selector{
+    color: var(--clr-font);
 }
 
 /* xs */

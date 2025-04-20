@@ -10,6 +10,7 @@
     align-items: center;
     gap: 2vw;
     position: relative;
+    z-index: 1;
 }
 
 .img-wrapper{
@@ -80,8 +81,7 @@
     position: relative;
 }
 
-.explore-text::after{
-    content: '';
+.explore-text-after{
     height: 2px;
     width: 100%;
     background: var(--clr-font);
@@ -93,7 +93,7 @@
     transition: transform .5s ease-out;
 }
 
-.explore-text:hover::after{
+.explore-text:hover .explore-text-after{
     transform-origin: bottom left;
     transform: scaleX(1);
 }
@@ -124,6 +124,10 @@
     width: 20px;
     position: absolute;
     transition: transform .3s ease-in-out;
+}
+
+.explore-icon-inkMode-selectors{
+    transition: all .4s ease;
 }
 
 /* xs */

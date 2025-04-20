@@ -91,6 +91,10 @@
     transform: translateY(100%);
 }
 
+.inkm-lower-part{
+    cursor: pointer;
+}
+
 .inkm-lower-part > div{
     padding-top: 5px;
 }

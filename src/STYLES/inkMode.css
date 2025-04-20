@@ -1,0 +1,23 @@
+.inkMode-bg-color{
+   background-color: var(--clr-font);
+}
+
+.inkMode-morquee-color{
+    color: var(--clr-font);
+}
+  
+.inkMode-color{
+   color: var(--clr-card-bg);
+}
+
+.inkMode-icons-bg-color{
+    background-color: var(--clr-card-bg);
+}
+
+.inkMode-explore-icon-fill{
+    fill: var(--clr-card-bg);
+}
+
+.inkMode-border-color{
+    border-color: var(--clr-card-bg);
+}

@@ -27,8 +27,9 @@
     text-decoration: underline;
 }
 
-.e-text-first a{
+#e-text-a{
     color: var(--clr-font);
+    transition: all 0.4s ease;
 }
 
 /* xs */

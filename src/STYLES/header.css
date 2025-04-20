@@ -35,6 +35,7 @@
     justify-content: space-between;
     padding: 20px 15px;
     background-color: var(--clr-bg);
+    transition: all .4s ease;
 }
 
 .ham-menu-wrapper{
@@ -102,6 +103,7 @@
 
 .header-desktop{
     display: none;
+    transition: all .4s ease;
 }
 
 .content-left-desktop{
@@ -200,6 +202,7 @@
     font-size: 1.3vw;
     line-height: 1.3vw;
     text-transform: none;
+    color: var(--clr-font);
 }
 
 /* xs */

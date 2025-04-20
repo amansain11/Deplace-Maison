@@ -73,6 +73,7 @@
     height: 48px;
     background-color: var(--clr-card-bg);
     align-content: center;
+    color: var(--clr-font);
 }
 
 /* md */
