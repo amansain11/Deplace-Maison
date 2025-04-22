@@ -31,3 +31,12 @@ body {
 .goo {
   display: none;
 }
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+  #cursor {
+    display: none !important;
+  }
+}

@@ -1,4 +1,10 @@
 export const GooeyCursor = ()=>{
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (isTouchDevice) {
+      return;
+    }
+
     const TAIL_LENGTH = 30;
 
     const cursor = document.getElementById('cursor');
