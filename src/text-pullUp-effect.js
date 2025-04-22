@@ -5,7 +5,7 @@ export const textPullUpEffect = ()=>{
                 setTimeout(() => {
                     entry.target.classList.add('pullUp-effect');
                     observer.unobserve(entry.target);
-                }, 3000);
+                }, 2000);
             }
         })
     }, {threshold: 0});
@@ -17,8 +17,7 @@ export const textPullUpEffect = ()=>{
                     entry.target.firstElementChild.classList.remove('logoPull-effect');
                     observer.unobserve(entry.target);
                 },1000);
-            }
-        })
+            }        })
     }, {threshold: 0});
     
     const pullUpTexts = document.querySelectorAll('.pull-up-text');
