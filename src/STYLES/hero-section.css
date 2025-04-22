@@ -27,6 +27,11 @@
     align-self: flex-end;
 }
 
+.hero-pull-up-text{
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
 .pull-up-text{
     /* opacity: 0; */
     transform: translateY(100%);
