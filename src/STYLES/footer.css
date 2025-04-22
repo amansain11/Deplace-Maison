@@ -11,7 +11,7 @@ footer{
 
 footer::before{
     content: '';
-    background: url(noise-background);
+    background: url(noise-background.png);
     position: absolute;
     z-index: -1;
     width: 100%;
