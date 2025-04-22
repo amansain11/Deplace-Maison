@@ -25,6 +25,7 @@
     gap: 6px;
     pointer-events: none;
     transition: left .5s ease;
+    touch-action: pan-y;
 }
 
 .left-50-percent{

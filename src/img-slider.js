@@ -20,6 +20,10 @@ export const slider = ()=>{
 
     observer.observe(slider);
 
+    // ======================
+    // Desktop Mouse Events
+    // ======================
+
     slider.addEventListener('mousedown', (e)=>{
         pressed = true;
         startX = e.offsetX - innerSlider.offsetLeft;
@@ -47,6 +51,30 @@ export const slider = ()=>{
         innerSlider.style.left = `${x - startX}px`;
         checkboundary();
     })
+
+    // ======================
+    // Mobile Touch Events
+    // ======================
+
+    slider.addEventListener('touchstart', (e) => {
+        pressed = true;
+        startX = e.touches[0].clientX - innerSlider.offsetLeft;
+    });
+
+    slider.addEventListener('touchend', () => {
+        pressed = false;
+    });
+
+    slider.addEventListener('touchmove', (e) => {
+        if (!pressed) return;
+        x = e.touches[0].clientX;
+        innerSlider.style.left = `${x - startX}px`;
+        checkboundary();
+    });
+    
+    // ======================
+    // Boundaries
+    // ======================
 
     function checkboundary(){
         let outer = slider.getBoundingClientRect();
