@@ -5,7 +5,7 @@ export const textPullUpEffect = ()=>{
                 setTimeout(() => {
                     entry.target.classList.add('pullUp-effect');
                     observer.unobserve(entry.target);
-                }, 3000);
+                }, 3500);
             }
         })
     }, {threshold: 0});
