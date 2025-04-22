@@ -10,6 +10,9 @@ export const slider = ()=>{
         entries.forEach(entry =>{
             if(entry.isIntersecting){
                 entry.target.firstElementChild.classList.remove('left-50-percent')
+                setTimeout(() => {
+                    innerSlider.style.transition = 'unset';
+                }, 1000);
                 observer.unobserve(entry.target)
             }
         })
