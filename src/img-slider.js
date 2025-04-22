@@ -6,6 +6,17 @@ export const slider = ()=>{
     let startX;
     let x;
 
+    const observer = new IntersectionObserver((entries, observer)=>{
+        entries.forEach(entry =>{
+            if(entry.isIntersecting){
+                entry.target.firstElementChild.classList.remove('left-50-percent')
+                observer.unobserve(entry.target)
+            }
+        })
+    }, {threshold: 0});
+
+    observer.observe(slider);
+
     slider.addEventListener('mousedown', (e)=>{
         pressed = true;
         startX = e.offsetX - innerSlider.offsetLeft;
@@ -38,14 +49,11 @@ export const slider = ()=>{
         let outer = slider.getBoundingClientRect();
         let inner = innerSlider.getBoundingClientRect();
 
-        console.log(inner)
-        console.log(outer)
-
         if(parseInt(innerSlider.style.left) > 0){
             innerSlider.style.left = '0px';
         }
-        // else if(inner.right < outer.right){
-        //     innerSlider.style.left = `-${inner.width - outer.width}px`;
-        // }
+        if(inner.right < outer.right){
+            innerSlider.style.left = `-${inner.width - outer.width}px`;
+        }
     } 
 };
